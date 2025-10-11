@@ -10,7 +10,7 @@ class Autholas {
     
     // API Configuration
     private const API_KEY = 'YOUR_API_KEY_HERE';
-    private const API_URL = 'https://autholas.nicholasdevs.xyz/api/auth/php';
+    private const API_URL = 'https://autholas.nicholasdevs.my.id/api/auth/php';
     
     // Session properties
     public $sessionToken = '';
@@ -398,4 +398,5 @@ class Autholas {
         );
     }
 }
+
 ?>

@@ -471,7 +471,7 @@ curl_setopt($ch, CURLOPT_CAINFO, '/path/to/cacert.pem');
 ```php
 // Test script
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://autholas.nicholasdevs.xyz/api/auth/php');
+curl_setopt($ch, CURLOPT_URL, 'https://autholas.nicholasdevs.my.id/api/auth/php');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_TIMEOUT, 10);
 $result = curl_exec($ch);
@@ -657,7 +657,7 @@ class AutholasTest extends TestCase {
 ```php
 // Use environment variables for sensitive data
 $apiKey = getenv('AUTHOLAS_API_KEY') ?: 'default_key';
-$apiUrl = getenv('AUTHOLAS_API_URL') ?: 'https://autholas.nicholasdevs.xyz/api/auth/php';
+$apiUrl = getenv('AUTHOLAS_API_URL') ?: 'https://autholas.nicholasdevs.my.id/api/auth/php';
 ```
 
 ## Dependencies
@@ -707,5 +707,6 @@ For issues related to:
 - Responsive web interface
 
 ---
+
 
 **Note**: This PHP client is specifically designed for web applications and does not enforce hardware ID restrictions, making it perfect for multi-device web access.
